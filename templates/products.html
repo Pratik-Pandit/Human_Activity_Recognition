@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>All Products - OnCart</title>
+	<link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css2?
+	family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}"> 
+</head>
+<body>
+	    <div class="container">
+         <div class="navbar">
+    	 <div class="logo">
+    	 	  <img src="{{ url_for('static', filename='images/logo.png') }}" width="125px">
+    	 </div>
+    	 <nav>
+         <ul id="MenuItems">
+				<li><a href="/">Home</a></li>
+				<li><a href="/products">Programs</a></li>
+				<li><a href="/about">About Us</a></li>
+				<li><a href="/contact">Contact</a></li>       
+			  </ul>
+    	 </nav>
+    	 
+    	 <img src="{{ url_for('static', filename='images/menu.png') }}" class="menu-icon" onclick="menutoggle()">
+      </div>
+     </div>
+      
+      <div class="small-container">
+          <div class="row row-2">
+            <h2 class="title">Our Programs</h2>
+        
+       	   <div class="row">
+       	   	    <div class="col-5">
+       	   	   	   <img src="{{ url_for('static', filename='images/p1.jpg') }}">
+       	   	   </div>
+            </div>
+            </div>
+        </div>
+
+      <div class="testimonial1">
+        <div class="small-container">
+               <div class="row">
+             <div class="col-3">
+                   <i class="fa fa-quote-left"></i><br>
+                  <img src="{{ url_for('static', filename='images/test1.png') }}">	
+                  <h3>FB Low -Impact<h3><br>
+                    <p>4 WEEK PROGRAM -34 MIN/DAY
+                    FB Low Impact Round 2 - Build 
+                    Muscle & Burn Fat - 40 Minutes or Less</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i> 
+                     </div>
+             </div>
+             <div class="col-3">
+                <i class="fa fa-quote-left"></i><br>
+               <img src="{{ url_for('static', filename='images/test2.png') }}">	
+               <h3>FB-Blend<h3><br>
+                 <p>4 WEEK PROGRAM -38 MIN/DAY
+                    FB Blend - Burn Fat, Build Muscle,
+                    Tone; 35 or 55 Minutes a Day</p>
+                 <div class="rating">
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i> 
+                  </div>
+             </div>
+              <div class="col-3">
+              <i class="fa fa-quote-left"></i><br>
+              <img src="{{ url_for('static', filename='images/test3.png') }}">	
+               <h3>FB-30<h3><br>
+                <p>4 WEEK PROGRAM -30 MIN/DAY
+                FB  30 - Fat Loss Program For Busy People</p>
+               <div class="rating">
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i> 
+              </div>
+            </div>
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i><br>
+                <img src="{{ url_for('static', filename='images/test4.png') }}">	
+                 <h3>FB-Bodyweight<h3><br>
+                  <p>4 WEEK PROGRAM - 40 MIN/DAY
+                  FB Bodyweight - Bodyweight Only Fat Loss Program</p>
+                 <div class="rating">
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i> 
+                </div>
+               </div>
+               <div class="col-3">
+                <i class="fa fa-quote-left"></i><br>
+                <img src="{{ url_for('static', filename='images/test5.png') }}">	
+                 <h3>FB-Reboot<h3><br>
+                  <p>8 WEEK PROGRAM -35 MIN/DAY
+                    FB Reboot - 8-Week Program to Jump-start Your Fitness
+                    Routine </p>
+                 <div class="rating">
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i> 
+                </div>
+               </div>
+            </div>
+      </div>
+      
+
+<!----------- offer ---------->
+<div class="offer1">
+    <div class="row">
+           <div class="col-2">
+                  <img src="{{ url_for('static', filename='images/choose1.jpg') }}" class="offer1-img">
+           </div>
+           <div class="col-2">
+                 <p><b>EXPERIENCE THE FITNESS WAVE</b></p>
+                 <h1>1500 SQ.FT OPEN AIR CROSSFIT STUDIO</h1>
+                 <medium>Our rooftop open air CrossFit studio will help you
+                    push your limits and get you to your fitness goals.</medium>
+           <br>
+                 <a href="" class="btn">JOIN NOW &#43;</a>
+           </div>
+    </div>
+</div>
+
+
+ <!----------- footer-------->
+
+    <div class="footer">
+    	<div class="container">
+    		<div class="row">
+    			<div class="footer-col-1">
+    				<h3>Download Our App</h3>
+    				<p>Download App for Android and iOS mobile phone.</p>
+    				<div class="app-logo">
+    					<img src="{{ url_for('static', filename='images/play-store.png') }}">
+    					<img src="{{ url_for('static', filename='images/app-store.png') }}">
+    				</div>
+    			</div>
+    			<div class="footer-col-2">
+    				<img src="{{ url_for('static', filename='images/logo-white.png') }}">
+    				<p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.</p>
+    			</div>
+    			<div class="footer-col-3">
+    				<h3>Useful Links</h3>
+    				<ul>
+    					<li>Coupons</li>
+    					<li>Blog Post</li>
+    					<li>Return Policy</li>
+    					<li>Join Affiliate</li>
+    				</ul>
+    			</div>
+    			<div class="footer-col-3">
+    				<h3>Follow us</h3>
+    				<ul>
+    					<li>Facebook</li>
+    					<li>Twitter</li>
+    					<li>Instagram</li>
+    					<li>YouTube</li>
+    				</ul>
+    			</div>
+    		</div>
+            <hr>
+            <p class="copyright">Coypright 2020</p>
+    	</div>
+    </div>
+ <!-----------js for toggle menu---------->
+      <script>
+      	  var MenuItems = document.getElementById("MenuItems");
+
+      	  MenuItems.style.maxHeight = "0px";
+
+      	  function menutoggle(){
+      	  	if(MenuItems.style.maxHeight == "0px")
+      	  	   {
+      	  		  MenuItems.style.maxHeight = "200px"
+      	  	   }
+      	  	else
+      	  	   {
+                  MenuItems.style.maxHeight = "0px"
+      	  	   }
+      	  }
+      </script>
+
+
+</body>
+</html>	
+
+
+
+
+
+
+
+

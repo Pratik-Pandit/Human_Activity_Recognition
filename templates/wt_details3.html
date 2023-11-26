@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>All Products - OnCart</title>
+	<link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css2?
+	family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+	    <div class="container">
+         <div class="navbar">
+    	 <div class="logo">
+    	 	  <img src="{{ url_for('static', filename='images/logo.png') }}" width="125px">
+    	 </div>
+    	 <nav>
+    	 	  <ul id="MenuItems">
+            <li><a href="/">Home</a></li>
+				<li><a href="/products">Programs</a></li>
+				<li><a href="/about">About Us</a></li>
+				<li><a href="/contact">Contact</a></li>
+    	 	  </ul>
+    	 </nav>
+    	 
+    	 <img src="{{ url_for('static', filename='images/menu.png') }}" class="menu-icon" onclick="menutoggle()">
+      </div>
+     </div>
+      
+   <!--------- single product details ------>  
+
+        <div class="small-container single-product">
+           <div class="row">
+               <div class="col-2">
+                   <img src="{{ url_for('static', filename='images/w4.gif') }}" width="100%" id="ProductImg">
+                   <div class="small-img-row">
+                   <div class="small-img-col">
+                   <img src="{{ url_for('static', filename='images/waist1.png') }}" width="100%" class="small-img">
+                   </div>
+                   <div class="small-img-col">
+                   <img src="{{ url_for('static', filename='images/abs1.png') }}" width="100%" class="small-img">
+                   </div>
+                   <div class="small-img-col">
+                   <img src="{{ url_for('static', filename='images/weight1.png') }}" width="100%" class="small-img">
+                   </div>
+                   </div>
+               </div>
+               <div class="col-2">
+                   <p>Lower Abs</p>
+                   <h1>Barbell Deadlift</h1>
+                   <a href="" class="btn">Perform</a>
+                   <br>
+                   <p>Exercises keep you strong. Barbell Deadlift is one of the best exercises to target your upper back. It will help
+                     you improve your mood and gain energy.</p>
+               </div>   
+            </div>
+        </div>
+ 
+    <!--------title------>
+         <div class="small-container">
+             <div class="row row-2">
+                 <h2>Related Exercises</h2>
+                 <p>View More</p>
+             </div>
+         
+         </div>
+
+      
+    <!------products------>
+      <div class="small-container">
+       	   
+         <div class="row">
+            <div class="col-4">
+                  <img src="{{ url_for('static', filename='images/w1.gif') }}"> 
+                  <h4>Barbell Bench Press</h4>
+            <a href="/wt_details" class="btn">Try It &#8594;</a>
+            </div>
+             <div class="col-4">
+                  <img src="{{ url_for('static', filename='images/w2.gif') }}">
+                  <h4>Barbell Bent Over Row</h4>
+            <a href="/wt_details1" class="btn">Try It &#8594;</a>
+            </div>
+             <div class="col-4">
+                  <img src="{{ url_for('static', filename='images/w3.gif') }}">
+                  <h4>Barbell Front Squat</h4>
+            <a href="/wt_details2" class="btn">Try It &#8594;</a>
+            </div> 
+              <div class="col-4">
+                 <img src="{{ url_for('static', filename='images/w5.gif') }}">
+                 <h4> Barbell Curl</h4>
+                 <a href="/wt_details4" class="btn">Try It &#8594;</a>
+             </div>
+             </div>
+             
+    <div class="row">
+         <div class="col-4">
+            <img src="{{ url_for('static', filename='images/w6.gif') }}">
+            <h4>Barbell Decline Pullover</h4>
+            <a href="/wt_details1" class="btn">Try It &#8594;</a>
+        </div>
+         <div class="col-4">
+            <img src="{{ url_for('static', filename='images/w7.gif') }}">
+            <h4>Barbell Floor Calf Raise</h4>
+            <a href="/wt_details1" class="btn">Try It &#8594;</a>
+        </div>
+        <div class="col-4">
+            <img src="{{ url_for('static', filename='images/w8.gif') }}">
+            <h4> Dumbbell One Arm Wrist Curl</h4>
+            <a href="/wt_details1" class="btn">Try It &#8594;</a>
+        </div>
+         <div class="col-4">
+            <img src="{{ url_for('static', filename='images/w9.gif') }}">
+            <h4>Dumbbell Alternate Side Press</h4>
+            <a href="/wt_details1" class="btn">Try It &#8594;</a>
+         </div>
+     </div>
+
+ <!----------- footer-------->
+
+    <div class="footer">
+    	<div class="container">
+    		<div class="row">
+    			<div class="footer-col-1">
+    				<h3>Download Our App</h3>
+    				<p>Download App for Android and iOS mobile phone.</p>
+    				<div class="app-logo">
+                  <img src="{{ url_for('static', filename='images/play-store.png') }}">
+                  <img src="{{ url_for('static', filename='images/app-store.png') }}">
+    				</div>
+    			</div>
+    			<div class="footer-col-2">
+               <img src="{{ url_for('static', filename='images/logo-white.png') }}">
+    				<p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.</p>
+    			</div>
+    			<div class="footer-col-3">
+    				<h3>Useful Links</h3>
+    				<ul>
+    					<li>Coupons</li>
+    					<li>Blog Post</li>
+    					<li>Return Policy</li>
+    					<li>Join Affiliate</li>
+    				</ul>
+    			</div>
+    			<div class="footer-col-3">
+    				<h3>Follow us</h3>
+    				<ul>
+    					<li>Facebook</li>
+    					<li>Twitter</li>
+    					<li>Instagram</li>
+    					<li>YouTube</li>
+    				</ul>
+    			</div>
+    		</div>
+            <hr>
+            <p class="copyright">Coypright 2020</p>
+    	</div>
+    </div>
+ <!-----------js for toggle menu---------->
+      <script>
+      	  var MenuItems = document.getElementById("MenuItems");
+
+      	  MenuItems.style.maxHeight = "0px";
+
+      	  function menutoggle(){
+      	  	if(MenuItems.style.maxHeight == "0px")
+      	  	   {
+      	  		  MenuItems.style.maxHeight = "200px"
+      	  	   }
+      	  	else
+      	  	   {
+                  MenuItems.style.maxHeight = "0px"
+      	  	   }
+      	  }
+      </script>
+
+  
+  <!---------js for product gallery -------->
+  
+   <script>
+     var ProductImg = document.getElementById("ProductImg");
+     var SmallImg = document.getElementsByClassName("small-img");
+
+        SmallImg[0].onclick = function()
+         {
+            ProductImg.src = SmallImg[0].src;
+         }
+        SmallImg[1].onclick = function()
+         {
+            ProductImg.src = SmallImg[1].src;
+         } 
+        SmallImg[2].onclick = function()
+         {
+            ProductImg.src = SmallImg[2].src;
+         }
+        SmallImg[3].onclick = function()
+         {
+            ProductImg.src = SmallImg[3].src;
+         }
+   </script>
+
+
+
+
+</body>
+</html>	

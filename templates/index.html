@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>OnCart</title>
+	<link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css2?
+	family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}"> 
+</head>
+<body>
+	
+    <div class="header">
+	<div class="container">
+         <div class="navbar">
+    	 <div class="logo">
+    	 	 <a href="index"><img src="{{ url_for('static', filename='images/logo.png') }}" width="150px"></a>
+    	 </div>
+    	 <nav>
+			<ul id="MenuItems">
+				<li><a href="/">Home</a></li>
+				<li><a href="/products">Programs</a></li>
+				<li><a href="/about">About Us</a></li>
+				<li><a href="/contact">Contact</a></li>       
+			  </ul>
+    	 </nav>
+    	 <img src="{{ url_for('static', filename='images/menu.png') }}" class="menu-icon" onclick="menutoggle()">
+      </div>
+      <div class="row">
+      	  <div class="col-2">
+      	  	   <h1>Give Your Workout<br>A New Style!</h1>
+      	  	   <p>Success isn't always about <br> hard work gains success.
+      	  	   Greatness will come.</p>
+      	  	   <a href="" class="btn">Explore Now &#8594;</a>
+      	  </div>
+      	  <div class="col-2">
+      	  	   <img src="{{ url_for('static', filename='images/f1.jpg') }}">
+      	  </div>
+      </div>
+    </div>
+   </div>   
+
+
+  <! ------- featured Categories----------->
+
+       <div class="categories">
+          <div class="small-container">
+          	   <div class="row"> 
+               <div class="col-3">
+               	   <img src="{{ url_for('static', filename='images/pose6.jpg') }}">
+               </div>
+               <div class="col-3">
+                   <img src="{{ url_for('static', filename='images/pose1.jpg') }}">
+               </div>    
+               <div class="col-3">
+                   <img src="{{ url_for('static', filename='images/pose3.jpg') }}">
+               </div> 
+                <div class="col-3">
+                   <img src="{{ url_for('static', filename='images/pose5.jpg') }}">
+               </div>     
+               <div class="col-3">
+                   <img src="{{ url_for('static', filename='images/pose4.jpg') }}">
+               </div>     
+               <div class="col-3">
+                   <img src="{{ url_for('static', filename='images/pose2.jpg') }}">
+               </div>     
+            </div>
+          </div>  
+       </div>
+
+ <! -------- featured products ----------->
+       <div class="small-container">
+       	   <h2 class="title">Our Program <br> Build Your Best Body</h2>
+       	   <div class="row">
+       	   	   <div class="col-4">
+       	   	   	   <img src="{{ url_for('static', filename='images/flexmuscle.jpg') }}"></a>
+       	   	   	   <h4>Creating tension that's  temporarily making the muscle fibers smaller or contracted.</h4></a>
+				   <a href="/product_details" class="btn">Explore Now &#8594;</a>
+       	   	   </div>
+       	   	    <div class="col-4">
+       	   	   	   <img src="{{ url_for('static', filename='images/cardio.jpg') }}">
+       	   	   	   <h4>Exercise your heart rate up and keeps it up for a prolonged period of time.</h4>
+				   <br>
+       	   	   	   <a href="/cardio_details" class="btn">Explore Now &#8594;</a> 
+       	   	   </div>
+       	   	    <div class="col-4">
+       	   	   	   <img src="{{ url_for('static', filename='images/weightlifting.jpg') }}">
+       	   	   	   <h4>Attempts a maximum weight single lift of a barbell loaded with weight plates.</h4>
+				   <br>
+       	   	   	   <a href="/wt_details" class="btn">Explore Now &#8594;</a>
+       	   	   </div>
+       	   </div>
+
+
+ <!------------------------------------------------------------------------------------------------------>
+
+
+       	   <h2 class="title">Our Trainers</h2>
+       	   <div class="row">
+       	   	   <div class="col-4">
+       	   	   	   <img src="{{ url_for('static', filename='images/trainer1.jpg') }}">
+       	   	   	   <h5>Weight Trainer</h5>
+       	   	   	   <div class="rating">
+       	   	   	   	   <i class="fa fa-star"></i>
+       	   	   	   	   <i class="fa fa-star"></i>
+       	   	   	   	   <i class="fa fa-star"></i>
+       	   	   	   	   <i class="fa fa-star"></i>
+       	   	   	   	   <i class="fa fa-star-o"></i>
+       	   	   	   </div>
+       	   	   </div>
+       	   	    <div class="col-4">
+       	   	   	   <img src="{{ url_for('static', filename='images/trainer2.jpg') }}">
+       	   	   	   <h5>Yoga Trainer</h5>
+       	   	   	   <div class="rating">
+       	   	   	   	   <i class="fa fa-star"></i>
+       	   	   	   	   <i class="fa fa-star"></i>
+       	   	   	   	   <i class="fa fa-star"></i>
+       	   	   	   	   <i class="fa fa-star-half-o"></i>
+       	   	   	   	   <i class="fa fa-star-o"></i>
+       	   	   	   </div>
+       	   	   </div>
+       	   	    <div class="col-4">
+       	   	   	   <img src="{{ url_for('static', filename='images/trainer3.jpg') }}">
+       	   	   	   <h5>Muscle Trainer</h5>
+       	   	   	   <div class="rating">
+       	   	   	   	   <i class="fa fa-star"></i>
+       	   	   	   	   <i class="fa fa-star"></i>
+       	   	   	   	   <i class="fa fa-star"></i>
+       	   	   	   	   <i class="fa fa-star"></i>
+       	   	   	   	   <i class="fa fa-star-half-o"></i>
+       	   	   	   </div>
+       	   	   </div>
+       	   </div>
+         </div>
+
+<!----------- offer ---------->
+
+       <div class="offer">
+               <div class="row">
+               	   <div class="col-2">
+               	   	   <img src="{{ url_for('static', filename='images/choose.jpg') }}" class="offer-img">
+               	   </div>
+               	   <div class="col-2">
+               	   	  <p><b>Best Reason</b></p>
+               	   	  <h1>WHY CHOOSE US?</h1>
+               	   	  <medium>Choose your favorite class and start now. Remember the only bad workout is the one you didn't do.</medium>
+					  <br>
+               	   	  <a href="" class="btn">Total Members &#43;</a>
+					  <a href="" class="btn">Best Trainers &#43;</a>
+					  <a href="" class="btn">Programs &#43;</a>
+					  <a href="" class="btn">Awards &#43;</a>
+               	   </div>
+               </div>
+       </div>
+
+<!--------- testimonial" ---------->
+       <div class="testimonial">
+       	   <div class="small-container">
+       	   	   <div class="row">
+                   <div class="col-3">
+                   	  <i class="fa fa-quote-left"></i>
+                   	    <p>Fitness within is the cleanest and most organized gym I’ve ever seen! I have no words to say how wonderful they are!.
+						Dominic makes you feel super comfortable, Kerr helps you eat better and healthy!.Fitness Within has a team of excellence! They have a place for anyone, a plan for any goal, everything is very flexible! 
+						I am extremely satisfied with Fitness Within and the entire team.</p>
+                   	   <div class="rating">
+       	   	   	   	   <i class="fa fa-star"></i>
+       	   	   	   	   <i class="fa fa-star"></i>
+       	   	   	   	   <i class="fa fa-star"></i>
+       	   	   	   	   <i class="fa fa-star"></i> 
+       	   	   	       </div>
+       	   	   	       <img src="{{ url_for('static', filename='images/user-1.png') }}">	
+       	   	   	       <h3>Jane Foster<h3>
+                   </div>
+                   <div class="col-3">
+                   	  <i class="fa fa-quote-left"></i>
+                   	    <p>I have been with Fitness Within for one week.  Since joining I am eating healthier and the coaching helps motivate me and the coaches keep encouraging me to do my best!!!  I love the cookbook they gave me because the recipes are simple and sooo good.   
+						The studio is welcoming, motivating but not intimidating … they take the time to explain things in a very positive way …. Love it!</p>
+                   	   <div class="rating">
+       	   	   	   	   <i class="fa fa-star"></i>
+       	   	   	   	   <i class="fa fa-star"></i>
+       	   	   	   	   <i class="fa fa-star"></i>
+       	   	   	   	   <i class="fa fa-star"></i>
+       	   	   	   	   <i class="fa fa-star-o"></i>
+       	   	   	       </div>
+       	   	   	       <img src="{{ url_for('static', filename='images/bs5.png') }}">	
+       	   	   	       <h3>Luke Shaw<h3>
+                   </div>
+                   <div class="col-3">
+                   	  <i class="fa fa-quote-left"></i>
+                   	    <p>I have been training at Fitness Within for 2 years.  I look forward to coming into the studio because I know that I will get a GREAT WORKOUT!  I love training here and I am getting so much stronger and tighter.  The coaches pushed me beyond what I thought I could handle!  I love the atmosphere and the people.   
+						They make it so comfortable to be in a fitness environment.</p>
+                   	   <div class="rating">
+       	   	   	   	   <i class="fa fa-star"></i>
+       	   	   	   	   <i class="fa fa-star"></i>
+       	   	   	   	   <i class="fa fa-star"></i>
+       	   	   	   	   <i class="fa fa-star"></i>
+       	   	   	   	   <i class="fa fa-star-o"></i>
+       	   	   	       </div>
+       	   	   	       <img src="{{ url_for('static', filename='images/user-2.png') }}">	
+       	   	   	       <h3>Andrew Fox<h3>
+                   </div>
+       	   	   </div>
+       	   </div>
+       	</div>
+
+<!---------------- brands -------->
+      <div class="brands">
+      	 <div class="small-container">
+      	 	<div class="row">
+      	 		<div class="col-6">
+      	 			<img src="{{ url_for('static', filename='images/48fitness.png') }}">
+      	 		</div>
+      	 		<div class="col-6">
+      	 			<img src="{{ url_for('static', filename='images/under.png') }}">
+      	 		</div>
+      	 		<div class="col-6">
+      	 			<img src="{{ url_for('static', filename='images/nike.png') }}">
+      	 		</div>
+      	 		<div class="col-6">
+      	 			<img src="{{ url_for('static', filename='images/one.png') }}">
+      	 		</div>
+      	 		<div class="col-6">
+      	 			<img src="{{ url_for('static', filename='images/fit.png') }}">
+      	 		</div>
+      	 	</div>
+      	 </div>
+      </div>
+
+ <!----------- footer-------->
+
+    <div class="footer">
+    	<div class="container">
+    		<div class="row">
+    			<div class="footer-col-1">
+    				<h3>Download Our App</h3>
+    				<p>Download App for Android and iOS mobile phone.</p>
+    				<div class="app-logo">
+    					<img src="{{ url_for('static', filename='images/play-store.png') }}">
+    					<img src="{{ url_for('static', filename='images/app-store.png') }}">
+    				</div>
+    			</div>
+    			<div class="footer-col-2">
+    				<img src="{{ url_for('static', filename='images/logo-white.png') }}">
+    				<p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.</p>
+    			</div>
+    			<div class="footer-col-3">
+    				<h3>Useful Links</h3>
+    				<ul>
+    					<li>Coupons</li>
+    					<li>Blog Post</li>
+    					<li>Return Policy</li>
+    					<li>Join Affiliate</li>
+    				</ul>
+    			</div>
+    			<div class="footer-col-3">
+    				<h3>Follow us</h3>
+    				<ul>
+    					<li>Facebook</li>
+    					<li>Twitter</li>
+    					<li>Instagram</li>
+    					<li>YouTube</li>
+    				</ul>
+    			</div>
+    		</div>
+            <hr>
+            <p class="copyright">Coypright 2023</p>
+    	</div>
+    </div>
+ <!-----------js for toggle menu---------->
+      <script>
+      	  var MenuItems = document.getElementById("MenuItems");
+
+      	  MenuItems.style.maxHeight = "0px";
+
+      	  function menutoggle(){
+      	  	if(MenuItems.style.maxHeight == "0px")
+      	  	   {
+      	  		  MenuItems.style.maxHeight = "200px"
+      	  	   }
+      	  	else
+      	  	   {
+                  MenuItems.style.maxHeight = "0px"
+      	  	   }
+      	  }
+      </script>
+
+
+</body>
+</html>	
+
+
+
+
+
+
+
+
+
