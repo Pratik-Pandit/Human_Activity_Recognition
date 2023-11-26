@@ -1,4 +1,4 @@
-# Yoga Asana Classifier
+# Gym Pose Classifier
 <img src="yoga.png"/>
 <h1>Description</h1>
 Hi welcome to my new deep learning project "Gym Pose Classifier / pose classifier ". This project as the name suggests can predict the gym pose which you are doing in front of the webcam.<br>
