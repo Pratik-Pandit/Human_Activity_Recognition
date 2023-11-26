@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - OnCart</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?
+    family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+        <div class="container">
+         <div class="navbar">
+         <div class="logo">
+              <img src="{{ url_for('static', filename='images/logo.png') }}" width="125px">
+         </div>
+         <nav>
+            <ul id="MenuItems">
+                <li><a href="/">Home</a></li>
+                <li><a href="/products">Programs</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/contact">Contact</a></li>       
+              </ul>
+         </nav>
+         <img src="{{ url_for('static', filename='images/menu.png') }}" class="menu-icon" onclick="menutoggle()">
+      </div>
+     </div>
+
+<!----------about-us-page-------->
+
+ <div class="about-us-page">
+     <div class="container">
+         <div class="row">
+             <div class="col-8">
+                <img src="{{ url_for('static', filename='images/gpb.jpg') }}" width="200%">
+              </div>
+             <div>
+              <div class="row">
+          <div class="col-8">
+               <p>Welcome to our fitness website! We are a team of dedicated individuals who are passionate about helping you achieve your 
+                fitness goals. Our goal is to provide you with the tools and resources you need to live a healthy, active lifestyle.
+                At our fitness website, we believe that everyone should have access to high-quality fitness information and support. 
+                We strive to provide you with the most up-to-date information and resources to help you achieve your fitness goals, whether 
+                you're a beginner or an experienced athlete.<br><br><br>
+                Our team consists of certified fitness professionals, nutritionists, and wellness experts who are committed to providing you with 
+                personalized support and guidance. We believe that fitness is not just about physical activity, but also encompasses mental and emotional 
+                wellness. That's why we focus on providing a holistic approach to fitness and wellness.
+            </p>
+        </div>
+        <div class="testimonial2">
+            <div class="small-container">
+                   <div class="row">
+                 <div class="col-3">
+                       <i class="fa fa-quote-left"></i>
+                       <br><br>
+                       <h9>Simple Workout logs<h9></h9>
+                         <p>Pellentesque posuere integer tincident.
+                            Phasellus consectetuer vestibulum eut.
+                        </p>
+                        <div class="rating">
+                                 <i class="fa fa-star"></i>
+                                 <i class="fa fa-star"></i>
+                                 <i class="fa fa-star"></i>
+                                 <i class="fa fa-star"></i> 
+                              </div>
+                              <img src="{{ url_for('static', filename='images/wk.png') }}">	
+                 </div>
+                 <div class="col-3">
+                       <i class="fa fa-quote-left"></i>
+                       <br><br>
+                       <h9>Detailed Progress Tracking<h9></h9>
+                         <p>Vestibuium anta ipsum primis in faucibus
+                            orci luctus at ulttrices posuere cubilia curea.
+                        </p>
+                        <div class="rating">
+                                 <i class="fa fa-star"></i>
+                                 <i class="fa fa-star"></i>
+                                 <i class="fa fa-star"></i>
+                                 <i class="fa fa-star"></i>
+                                 <i class="fa fa-star-o"></i>
+                              </div>
+                              <img src="{{ url_for('static', filename='images/tr.png') }}">	
+                 </div>
+                 <div class="col-3">
+                       <i class="fa fa-quote-left"></i>
+                       <br><br>
+                       <h9>Clear Nutrition Monitoring<h9></h9>
+                         <p>Praesent egesteas tristique nibh. Aeneen leo tiguala,
+                            porttitor eu consequat vitaee, elietend ac.
+                        </p>
+                        <div class="rating">
+                                 <i class="fa fa-star"></i>
+                                 <i class="fa fa-star"></i>
+                                 <i class="fa fa-star"></i>
+                                 <i class="fa fa-star"></i>
+                                 <i class="fa fa-star-o"></i>
+                              </div>
+                              <img src="{{ url_for('static', filename='images/n.png') }}">	
+                        </div>
+                     </div>
+                  </div>
+                </div>
+
+ <!----------- footer-------->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and iOS mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="{{ url_for('static', filename='images/play-store.png') }}">
+                        <img src="{{ url_for('static', filename='images/app-store.png') }}">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="{{ url_for('static', filename='images/logo-white.png') }}">
+                    <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Coypright 2023</p>
+        </div>
+    </div>
+ <!-----------js for toggle menu---------->
+      <script>
+          var MenuItems = document.getElementById("MenuItems");
+
+          MenuItems.style.maxHeight = "0px";
+
+          function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+               {
+                  MenuItems.style.maxHeight = "200px"
+               }
+            else
+               {
+                  MenuItems.style.maxHeight = "0px"
+               }
+          }
+      </script>
+
+</body>
+</html> 
